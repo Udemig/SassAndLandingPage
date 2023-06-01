@@ -1,0 +1,154 @@
+header {
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 10px;
+}
+header p {
+  font-size: 20px;
+  font-weight: bold;
+}
+header nav {
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+}
+header nav:hover {
+  border-radius: 20px;
+}
+header nav ul {
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+body {
+  background-color: rgba(167, 202, 50, 0.767);
+}
+
+div {
+  margin: 8px;
+  padding: 10px;
+}
+
+.ana-div {
+  background-color: rgba(127, 72, 183, 0.76);
+  height: 200px;
+  width: 300px;
+  margin: 8px;
+  border-radius: 10px;
+}
+.ana-div .cocuk-div1 {
+  background-color: rgba(167, 202, 50, 0.767);
+}
+.ana-div .cocuk-div1 p {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(127, 72, 183, 0.76);
+}
+
+.kayit-btn, .giris-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: red;
+  color: blue;
+  border-radius: 10px;
+  border: 2px yellow solid;
+}
+.kayit-btn:hover, .giris-btn:hover {
+  background-color: antiquewhite !important;
+  color: red;
+  transition: 0.3s;
+  border-radius: 20px;
+  --border-radius: $radius;
+}
+
+.giris-btn {
+  box-shadow: 0 0 10px gray;
+}
+
+.kayit-btn {
+  box-shadow: 0 0 10px black;
+}
+.kayit-btn:hover {
+  background-color: aqua !important;
+}
+
+.ozel-div-1 {
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.ozel-div-1:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+.ozel-div-2 {
+  background-color: aqua;
+  border-radius: 10px;
+}
+.ozel-div-2:hover {
+  box-shadow: 0 0 10px red;
+}
+
+.ozel-div-3 {
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.ozel-div-3:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+.ozel-div-4 {
+  background-color: aqua;
+  border-radius: 10px;
+}
+.ozel-div-4:hover {
+  box-shadow: 0 0 10px red;
+}
+
+.ozel-div-5 {
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.ozel-div-5:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+.ozel-div-1 {
+  font-size: 20px;
+}
+.ozel-div-1:hover {
+  font-size: 25px;
+}
+
+.ozel-div-2 {
+  font-size: 20px;
+}
+.ozel-div-2:hover {
+  font-size: 25px;
+}
+
+.ozel-div-3 {
+  font-size: 20px;
+}
+.ozel-div-3:hover {
+  font-size: 25px;
+}
+
+.ozel-div-4 {
+  font-size: 20px;
+}
+.ozel-div-4:hover {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

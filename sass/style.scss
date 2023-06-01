@@ -1,0 +1,106 @@
+@import 'header';
+@import 'constants';
+
+
+
+body{
+    background-color: $ana-renk;
+}
+
+div{
+    margin: $varsayilan-margin;
+    padding: 10px;
+    
+}
+.ana-div{
+    background-color: $ikincil-renk;
+    height: 200px;
+    width: 300px;
+    margin: $varsayilan-margin;
+    border-radius: $ana-kose;
+
+    .cocuk-div1{
+        background-color: $ana-renk;
+
+        p{
+           margin: 10px;
+           padding: 10px;
+           background-color: $ikincil-renk; 
+        }
+    }
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    --border-radius: $radius;
+    
+}
+
+%btn{
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+    color: blue;
+    border-radius: 10px;
+    border: 2px yellow solid;
+    &:hover{
+        background-color: antiquewhite !important;
+        color: red;
+        transition: .3s;
+        @include border-radius(20px);
+
+    }
+}
+
+.giris-btn{
+    @extend %btn;
+    box-shadow: 0 0 10px gray;
+}
+
+.kayit-btn{
+    @extend %btn;
+    box-shadow: 0 0 10px black;
+
+    &:hover{
+        background-color: aqua !important;
+    }
+}
+
+$sayac: 5;
+
+@for $i from 1 through $sayac{
+    @if($i%2 == 1){
+        .ozel-div-#{$i}{
+            background-color: antiquewhite;
+            border-radius: 10px;
+            &:hover{
+                box-shadow: 0 0 10px gray;
+            }
+        }
+    }@else {
+        .ozel-div-#{$i}{
+            background-color: aqua;
+            border-radius: 10px;
+            &:hover{
+                box-shadow: 0 0 10px red;
+            }
+        }
+    }
+    
+}
+
+$j: 1;
+
+@while ($j < 5){
+    .ozel-div-#{$j}{
+        font-size: 20px;
+        &:hover{
+            font-size: 25px;
+        }
+    }
+    $j: $j + 1;
+}
+
+
+
+
